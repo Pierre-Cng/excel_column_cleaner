@@ -1,0 +1,32 @@
+---------------------------------------------------------Pierre code with 2 ref files:------------------------------------------------------------------------------------------------------- 
+
+research 1 : name 4 first letters research into ref address file  -> match -> multiple match ? -> Yes, check for the next word in the name 
+											-> No, we have our index 
+							   -> no match -> research 2 
+
+research 2 : address research into ref address file  -> match -> multiple match ? -> Yes, check for the next word in the name 
+											-> No, we have our index 
+							   -> no match -> research 3
+
+research 3 : name 4 first letters research into ref zipcode file  -> match -> multiple match ? -> Yes, check for the next word in the name 
+											-> No, we have our index 
+							   -> no match -> research 4  
+
+
+research 4 : zipcode research research into ref zipcode file  -> match -> multiple match ? -> Yes, check for the next word in the name 
+											-> No, we have our index 
+							   -> no match -> failed list 
+
+---------------------------------------------------------Proposition of code with a unique ref file:----------------------------------------------------------------------------------------- 
+
+research 1 : name 4 first letters research into ref file  -> match -> multiple match ? -> Yes, check for the next word in the name  OR check address matching (research 2)
+											-> No, we have our index 
+							   -> no match -> research 2 
+
+research 2 : address research into ref file  -> match -> multiple match ? -> Yes, check for the next word in the name OR check zipcode matching (research 3)
+											-> No, we have our index 
+							   -> no match -> research 3
+
+research 3 : zipcode research research into ref file  -> match -> multiple match ? -> Yes, check for the next word in the name 
+											-> No, we have our index 
+							   -> no match -> failed list 
