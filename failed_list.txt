@@ -1,0 +1,21 @@
+Index:        1.0
+Name:         nan
+Address:      nan
+Zipcode:      nan
+Unnamed: 4    5.0
+Name: 0, dtype: object
+
+Index:            nan
+Name:         sdcasdc
+Address:          nan
+Zipcode:          nan
+Unnamed: 4        nan
+Name: 10, dtype: object
+
+Index:             nan
+Name:         sdcasddd
+Address:           nan
+Zipcode:           nan
+Unnamed: 4         nan
+Name: 11, dtype: object
+
